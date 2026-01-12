@@ -38,4 +38,26 @@ Common issues in legal RAG systems:
 This project address those failures by enforcing **section-level retrieval** , **strict 
 grounding, and explicit citations**.
 
+**System Architecture (End-to-End Flow)**
+The system follows a strict sequential pipeline.
+
+**Load -> Clean -> Chunk -> Embedding -> Retrieve -> Generate -> API -> UI**
+
+**Pipeline Breakdown**
+**1. Document Loading**
+  - IPC and CrPC Pdf are loaded fromthe data/ directory
+  - PDFs are parsed into a raw text
+  - Section headers are preserved
+  - Page numbers, footers, and formatting are removed
+Convert PDFs into strcutred legal text.
+
+**2. Text Cleaning**
+  - Normalize whitespace and line breaks
+  - Preserve section numbers and titles
+  - Ensure consistent formatting across documents
+Preprare text for reliable section based chunking.
+
+
+
+
 
