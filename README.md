@@ -8,13 +8,13 @@ The **Enterprise Legal RAG Assistant** is a retrieval question-answering system 
 
 statutory law.
 
-It answers legal question using the **Indian Penal Code (IPC)** and the **Code of Criminal
+It answers legal question using the **Indian Penal Code (IPC)** and the Code of Criminal
 
-Procedure (CrPC)** byt retrieving verified legal section and generating answers strictly
+Procedure (CrPC) by retrieving verified legal section and generating answers strictly
 
 grounded in those sections.
 
-The system is desgined with a single guiding rule;
+The system is designed with a single guiding rule;
 
 **The model only answers when a verified legal section is retrieved.**
 
@@ -23,7 +23,7 @@ The system is desgined with a single guiding rule;
 
 **Problem Statement**
 
-Most Retrieval_Agurmented Generation (RAG) systems treat retrieval as a supporting step. 
+Most Retrieval Agurmented Generation (RAG) systems treat retrieval as a supporting step. 
 
 In legal applications, retrieval is the answer:
 
@@ -79,7 +79,7 @@ Section-level chunks preserve legal correctness and enbale accurate citation.
   - Metadata also indexed alongside vectors for filtering and citation
 Enable semantic retrieval at the legal-section level.
 
-**5.Retireval
+**5.Retrieval**
 
 User Query → Embed → Retrieve Top-K Sections
 
@@ -91,7 +91,7 @@ if retrieval fails, answer generation is blocked.
 
 **6.Answer Generation (LLM)**
   - Retrieved sections are passed as the only context
-  - The LLm is instructed to answer ONLY using retrieved sections
+  - The LLM is instructed to answer ONLY using retrieved sections
   - External knowledge and guessing are not allowed.
 Output includes:
 - A grounded answer
@@ -206,6 +206,7 @@ These sections outline the punishments for being a thug, non-treatment of a vict
 
 
   
+
 
 
 
