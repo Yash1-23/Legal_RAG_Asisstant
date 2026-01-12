@@ -1,0 +1,13 @@
+pypdf
+sentence-transformers
+faiss-cpu
+numpy
+langchain-community
+langchain-huggingface
+langchain-groq
+python-dotenv
+fastapi
+uvicorn
+streamlit 
+requests
+rank-bm25
