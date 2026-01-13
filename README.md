@@ -120,6 +120,9 @@ Decouple core RAG logic from API and UI layers.
   - Return a Structured response containing:
     - answer
     - citations
+  The system uses an open-source Groq LLM - llama-3.1-8b-instant for answer generation.
+  The model is used only to summarize and explain retrieved legal sections and has no access to external legal knowledge.
+  All outputs are strictly grounded in retrieved IPC and CrPC sections.
 
  **9.FastAPI Backend**
    - Exposes the RAG service via APIs
@@ -255,6 +258,7 @@ legal queries using the RAG pipeline.
 
 
   
+
 
 
 
