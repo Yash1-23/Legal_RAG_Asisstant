@@ -89,6 +89,14 @@ Return: "Section is not found in the provided legal documents."
 
 if retrieval fails, answer generation is blocked.
 
+The sytem uses **BM25 based spare retrieval** to accuracy match legal section numbers and statutory terms.
+
+A **hybrid retrieval strategy** is applied for both numeric queries and keyword-based legal sections.
+
+This ensures precise section-level retrieval without relying on semantic guessing.  
+
+If no verified legal section is retrieved, the system fails safely instead of generating an answer.
+
 **6.Answer Generation (LLM)**
   - Retrieved sections are passed as the only context
   - The LLM is instructed to answer ONLY using retrieved sections
@@ -247,6 +255,7 @@ legal queries using the RAG pipeline.
 
 
   
+
 
 
 
